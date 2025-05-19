@@ -9,10 +9,14 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.window.Window
 import androidx.compose.ui.window.application
+import androidx.lifecycle.viewmodel.compose.viewModel
+import viewmodels.MainViewModel
 
 @Composable
 @Preview
-fun App() {
+fun App(
+    viewModel: MainViewModel = viewModel { MainViewModel() }
+) {
     var text by remember { mutableStateOf("Hello, World!") }
 
     MaterialTheme {

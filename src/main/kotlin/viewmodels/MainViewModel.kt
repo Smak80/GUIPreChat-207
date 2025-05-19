@@ -1,4 +1,6 @@
 package viewmodels
+import androidx.lifecycle.ViewModel
 
-class MainViewModel {
+class MainViewModel : ViewModel(){
+
 }
