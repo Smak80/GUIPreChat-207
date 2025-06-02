@@ -81,6 +81,7 @@ fun App(
                 { viewModel.inputText = it }
             ){
                 viewModel.messages.add(viewModel.inputText)
+                viewModel.sendMessage(viewModel.inputText)
                 viewModel.inputText = ""
             }
         }
